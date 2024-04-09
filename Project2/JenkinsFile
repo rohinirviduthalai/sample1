@@ -29,6 +29,7 @@ pipeline {
             steps {
                 echo 'Deploying...'
                 // Add commands for deploying the application
+                bat "dir"
             }
         }
     }
