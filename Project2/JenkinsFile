@@ -6,12 +6,18 @@ pipeline {
             steps {
                 echo 'Building...'
                 // Add commands for building the application
+                // python
+                def result = sh(script: 'python.exe ./project1/Kodekloud_excerise.py', returnStdout: true)
+
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
                 // Add commands for testing the application
+                // Checkout step
+                git branch: 'main', changelog: false, poll: false, url: 'https://github.com/rohinirviduthalai/sample2.git'
+
             }
         }
         stage('Deploy') {
