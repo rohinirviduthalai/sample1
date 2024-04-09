@@ -8,11 +8,12 @@ pipeline {
                 // Add commands for building the application
                 // python
                 //def result = sh(script: 'python.exe ./project1/Kodekloud_excerise.py', returnStdout: true)
-                sh '''
-                    python --version
-                    dir
-                    python ./project1/Kodekloud_excerise.py
-                '''
+                // sh '''
+                //     python --version
+                //     dir
+                //     python ./project1/Kodekloud_excerise.py
+                // '''
+                bat "python ./project1/Kodekloud_excerise.py"
             }
         }
         stage('Test') {
