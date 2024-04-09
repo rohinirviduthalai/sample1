@@ -9,9 +9,9 @@ pipeline {
                 // python
                 //def result = sh(script: 'python.exe ./project1/Kodekloud_excerise.py', returnStdout: true)
                 sh '''
-                python --version
-                dir
-                python ./project1/Kodekloud_excerise.py
+                    python --version
+                    dir
+                    python ./project1/Kodekloud_excerise.py
                 '''
             }
         }
