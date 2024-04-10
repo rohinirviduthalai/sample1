@@ -39,11 +39,12 @@ else:
     print("No")
 
 
-a = input("Enter a word: ")
+#a = input("Enter a word: ")
+c = "dad"
 b = ""
-for i in a:
+for i in c:
     b = i + b
-if (a == b): 
+if (c == b): 
     print ("yes")
 else:
     print("No")
